@@ -1,0 +1,24 @@
+# NAME
+
+HTTP::Session::State::MobileAttribute -
+
+# SYNOPSIS
+
+  use HTTP::Session::State::MobileAttribute;
+
+# DESCRIPTION
+
+HTTP::Session::State::MobileAttribute is
+
+# AUTHOR
+
+Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>
+
+# SEE ALSO
+
+# LICENSE
+
+Copyright (C) Tokuhiro Matsuno
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
