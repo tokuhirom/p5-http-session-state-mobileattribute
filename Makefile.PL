@@ -1,11 +1,13 @@
 use inc::Module::Install;
-name 'HTTP-Session-State-MobileAttribute';
-all_from 'lib/HTTP/Session/State/MobileAttribute.pm';
+name 'HTTP-Session-State-MobileAttributeID';
+all_from 'lib/HTTP/Session/State/MobileAttributeID.pm';
 
-# requires '';
+requires 'HTTP::Session' => 0.35;
+requires 'HTTP::MobileAttribute';
+requires 'HTML::StickyQuery::DoCoMoGUID'   => 0.01;
+requires 'Net::CIDR::MobileJP' => 0.19;
 
-
-readme_markdown_from 'lib/HTTP/Session/State/MobileAttribute.pm';
+readme_markdown_from 'lib/HTTP/Session/State/MobileAttributeID.pm';
 tests 't/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t';
 test_requires 'Test::More';
 test_requires 'YAML';
