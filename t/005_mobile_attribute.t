@@ -1,12 +1,11 @@
 use strict;
 use warnings;
-use Test::More;
+use Test::More tests => 5;
 use Test::Exception;
 use HTTP::Session;
 use HTTP::Session::Store::Test;
 use CGI;
-plan tests => 5;
-require HTTP::Session::State::MobileAttributeID;
+use HTTP::Session::State::MobileAttributeID;
 use HTTP::Response;
 
 sub {
@@ -36,6 +35,7 @@ sub {
     my $session = HTTP::Session->new(
         state => HTTP::Session::State::MobileAttributeID->new(
             mobile_attribute => HTTP::MobileAttribute->new(),
+            check_ip => 0,
         ),
         store   => HTTP::Session::Store::Test->new(),
         request => CGI->new(),
@@ -55,6 +55,7 @@ sub {
         HTTP::Session->new(
             state => HTTP::Session::State::MobileAttributeID->new(
                 mobile_attribute => HTTP::MobileAttribute->new(),
+                cidr     => Net::CIDR::MobileJP->new('t/data/cidr.yaml'),
             ),
             store   => HTTP::Session::Store::Test->new(),
             request => CGI->new(),
@@ -67,7 +68,8 @@ sub {
         HTTP_USER_AGENT => 'DoCoMo/1.0/D504i/c10/TJ',
     );
     my $state = HTTP::Session::State::MobileAttributeID->new(
-        mobile_attribute => HTTP::MobileAttribute->new()
+        mobile_attribute => HTTP::MobileAttribute->new(),
+        check_ip         => 0,
     );
     throws_ok { $state->get_session_id() } qr/cannot detect mobile id/;
 }->();
@@ -77,7 +79,8 @@ sub {
         HTTP_USER_AGENT => 'MOZILLA',
     );
     my $state = HTTP::Session::State::MobileAttributeID->new(
-        mobile_attribute => HTTP::MobileAttribute->new()
+        mobile_attribute => HTTP::MobileAttribute->new(),
+        check_ip         => 0,
     );
     throws_ok { $state->get_session_id() } qr/this carrier doesn't supports user_id/;
 }->();
