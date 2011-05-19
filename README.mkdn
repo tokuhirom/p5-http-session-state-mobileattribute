@@ -35,7 +35,6 @@ see also [Net::CIDR::MobileJP](http://search.cpan.org/perldoc?Net::CIDR::MobileJ
 # METHODS
 
 - get_session_id
-
 - response_filter
 
 for internal use only
@@ -46,7 +45,7 @@ Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>
 
 # SEE ALSO
 
-[HTTP::Session](http://search.cpan.org/perldoc?HTTP::Session), [HTTP::MobileAttribute](http://search.cpan.org/perldoc?HTTP::MobileAttribute), <http://www.hash-c.co.jp/info/2010052401.html>
+[HTTP::Session](http://search.cpan.org/perldoc?HTTP::Session), [HTTP::MobileAttribute](http://search.cpan.org/perldoc?HTTP::MobileAttribute), [http://www.hash-c.co.jp/info/2010052401.html](http://www.hash-c.co.jp/info/2010052401.html)
 
 # LICENSE
 
