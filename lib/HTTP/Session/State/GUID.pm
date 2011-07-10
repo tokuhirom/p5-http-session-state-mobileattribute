@@ -29,7 +29,7 @@ __END__
 
 =head1 NAME
 
-HTTP::Session::State::GUID - Maintain session IDs using DoCoMo phone's unique id
+HTTP::Session::State::GUID - (DEPRECATED)
 
 =head1 SYNOPSIS
 
@@ -44,6 +44,7 @@ HTTP::Session::State::GUID - Maintain session IDs using DoCoMo phone's unique id
 =head1 DESCRIPTION
 
 Maintain session IDs using mobile phone's unique id
+B<DEPRECATED>
 
 =head1 CONFIGURATION
 

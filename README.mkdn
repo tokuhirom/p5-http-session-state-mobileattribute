@@ -1,6 +1,6 @@
 # NAME
 
-HTTP::Session::State::MobileAttributeID - Maintain session IDs using mobile phone's unique id
+HTTP::Session::State::MobileAttributeID - (DEPRECATED)
 
 # SYNOPSIS
 
@@ -18,6 +18,8 @@ HTTP::Session::State::MobileAttributeID - Maintain session IDs using mobile phon
 # DESCRIPTION
 
 Maintain session IDs using mobile phone's unique id
+
+__ THIS MODULE WAS DEPERECATED. DO NOT USE THIS MODULE. I WILL REMOVE THIS MODULE FROM CPAN AFTER 2011-12-31__.
 
 __THIS MODULE MAKES SECURITY HOLE. TAKE CAREFULLY.__.
 

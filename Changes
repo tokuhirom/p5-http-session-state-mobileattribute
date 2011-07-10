@@ -1,5 +1,9 @@
 Revision history for Perl extension HTTP::Session::State::MobileAttribute
 
+0.40
+
+    - deprecated.
+
 0.39
 
     - depend to latest modules

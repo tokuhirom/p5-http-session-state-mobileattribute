@@ -7,7 +7,7 @@ use HTTP::MobileAttribute  plugins => [
     'CIDR',
 ];
 use 5.00800;
-our $VERSION = '0.39';
+our $VERSION = '0.40';
 
 __PACKAGE__->mk_ro_accessors(qw/mobile_attribute check_ip/);
 
