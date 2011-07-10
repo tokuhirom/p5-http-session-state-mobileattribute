@@ -56,7 +56,7 @@ __END__
 
 =head1 NAME
 
-HTTP::Session::State::MobileAttributeID - Maintain session IDs using mobile phone's unique id
+HTTP::Session::State::MobileAttributeID - (DEPRECATED)
 
 =head1 SYNOPSIS
 
@@ -74,6 +74,8 @@ HTTP::Session::State::MobileAttributeID - Maintain session IDs using mobile phon
 =head1 DESCRIPTION
 
 Maintain session IDs using mobile phone's unique id
+
+B< THIS MODULE WAS DEPERECATED. DO NOT USE THIS MODULE. I WILL REMOVE THIS MODULE FROM CPAN AFTER 2011-12-31>.
 
 B<THIS MODULE MAKES SECURITY HOLE. TAKE CAREFULLY.>.
 
